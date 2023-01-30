@@ -1,0 +1,65 @@
+<html>
+<head>
+    <script src="rumus.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hitung Sales</title>
+<style>
+    .center {
+  margin: auto;
+  width: 88%;
+  border: 3px solid #000000;
+  padding: 10px;
+  margin:auto;
+}
+input {width:190px;}
+#creator {border-bottom: 3px solid #000000;}
+#bhitung {background:lightblue;border-radius:15px;width:150px;height:30px;font-color:white;margin-top:15px;};
+#copass {font-size:15px}
+</style>
+</head>
+<body class='center'>
+<div style="font-size:18px"><b>Calculator Closing</b></div>
+<div style="font-size:8px">Version : 1.1 (add Cendrawasih calculator)</div>
+<div id="creator" style="font-size:12px">©Nurhadi Bachtiar</div>
+<div class='inputan'>
+<div>Toko : </div>
+<div><select name="cabang" id="cabang" style="width:190px">
+<option name="toqo" value="Aur Duri">Aur Duri</option>
+<option name="toqo" value="Siteba">Siteba</option>
+<option name="toqo" value="Pasar Baru">Pasar Baru</option>
+<option name="toqo" value="Cendrawasih">Cendrawasih</option>
+</select></div>
+<div>Hari Ke : </div>
+<div><input type="number" id="hari" name="hari" placeholder="31"/></div>
+<div>Shift 1 : </div>
+<div><input type="number" id="kshift1" name="kshift1" placeholder="99999999"/></div>
+<div>Shift 2 : </div>
+<div><input type="number" id="kshift2" name="kshift2" placeholder="99999999"/></div>
+<div>Net Sales Terakhir : </div>
+<div><input type="number" id="netsalesakhir" name="netsalesakhir" placeholder="99999999"/></div></div>
+<div><button
+onclick="Hitung()" value="Hitung Sales" id='bhitung'>Hitung Sales</button></div>
+<br/>
+<fieldset><legend>Sales Calculator</legend>
+<div id="copass">
+<div>*Laporan sales*</div>
+<div>*Cy.- <span id="cy"/></div>
+<div/>
+<div>Tgl : <span id="tgl"/></div>
+<div>Toko : <span id="toko"/></div>
+<div>Cabang : Padang</div>
+<br/>
+<div>Sales :</div>
+<div>•Target SPD / Net Sales : <span id="tspda"></span></div>
+<div>•Sales hari ini : Rp.<a id="harisales" name="harisales"/></div>
+<div>•Actual SPD / Net Sales : Rp.<a id="acSPD" name="acSPD"/> <a id="garing"/> <a id="tnetsales" name="tnetsales"/></div>
+<div>•Progress = <a id="progress" name="progress" /><a id="sen"/></div>
+<br/>
+<div>Selamat malam pak, berikut laporan closing di <span id="toko2"/>
+</div>
+</div>
+</fieldset>
+<br/>
+<div>Habis di copy jangan lupa <b>tambah titik angka jutaannya</b> ya cuy ??.</div>
+</body>
+</html>
